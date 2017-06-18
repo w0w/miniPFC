@@ -1,0 +1,6 @@
+{
+	"fanOnePin": 29,
+	"lightPin": 32,
+	"fanTwoPin": 31	,
+	"pumpPin": 40
+}

@@ -1,0 +1,18 @@
+{
+	"SeedID": 1,
+	"PlantID": "1",
+	"PlantName":"Lettuce",
+	"SeedQty": 7,
+	"GrowType": "Hydroponics",
+	"GrowArea": "100",
+	"GrowMedia": "FoamRaft",
+	"WaterType": "Normal",
+	"TempMin": 20,
+	"TempMax": 29,
+	"HumMax": 70,
+	"HumMin":30,
+	"NutrientID":  1,
+	"pH": 6,
+	"LightOn": "01",
+	"LightOff": "17"
+}
