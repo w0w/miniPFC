@@ -7,7 +7,7 @@ def loadConfig():
         return data
 
 
-currentPins = loadConfig()
+currentPins = loadConfig().values()
 
 def bootActuators():
     '''Assumes that pi is booting and set off all the relays'''
@@ -20,4 +20,3 @@ def bootActuators():
 
 
 bootActuators()
-

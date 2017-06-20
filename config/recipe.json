@@ -7,6 +7,7 @@
 	"GrowArea": "100",
 	"GrowMedia": "FoamRaft",
 	"WaterType": "Normal",
+	"pumpType":"hydro",
 	"TempMin": 20,
 	"TempMax": 29,
 	"HumMax": 70,

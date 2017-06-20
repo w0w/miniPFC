@@ -1,5 +1,5 @@
 {
-	"fanOnePin": 29,
+	"fanOnePin": 7,
 	"lightPin": 32,
 	"fanTwoPin": 31	,
 	"pumpPin": 40

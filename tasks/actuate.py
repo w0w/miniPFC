@@ -105,7 +105,20 @@ def fanDecision():
 		print(config["HumMax"])
 		print('fanDecision nothing happened case 4')
 
-		
+def pumpDecision():
+	if config["pumpType"] == "hydro":
+		print("pumpType")
+		print(config["pumpType"])
+		setPumpOn()
+		print('pumpDecision hydro case 1')
+	elif config["pumpType"] == "aero":
+		print("pumpType")
+		print(config["pumpType"])
+		#setPumpOn(10,'spray') #modify setPumpOn to spray mist for 10 ms
+		print('pumpDecision aero case')
+	else:
+		print('No pump logic found')
+
 
 def everythingOn():
 	setLightOn()
@@ -120,3 +133,4 @@ def everythingOff():
 def recipe():
 	lightDecision()
 	fanDecision()
+	pumpDecision()
