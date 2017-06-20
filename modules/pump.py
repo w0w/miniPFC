@@ -25,5 +25,5 @@ def setPumpOn():
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BOARD)
     print ("pump on")
-    GPIO.setup(lightPin, GPIO.OUT)
-    GPIO.output(lightPin, GPIO.LOW)
+    GPIO.setup(pumpPin, GPIO.OUT)
+    GPIO.output(pumpPin, GPIO.LOW)
