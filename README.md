@@ -9,9 +9,8 @@ The MiniPFC is a simplified version of the MIT OpenAg Food Computer.
 
 
 Code Structure -
-
+```
 |____.gitignore
-|
 |____config
 | |____pin.json
 | |____recipe.json
@@ -41,6 +40,7 @@ Code Structure -
 |____test.py
 |____LICENSE
 |____README.md
+```
 
 Use config/pin.json to modify pin connections to relays
 Use config/recipe.json to edit recipie parameters
