@@ -15,6 +15,7 @@ from modules.sensor import getTempC, getHumidity
 from modules.camera import captureImage
 from db import bulkStore
 
+S3_BASEURL = 'https://s3.ap-south-1.amazonaws.com/s-webcam-images/F5qkMpjxTKDgAcknk8d%2Bhfyt%2BL9fI8xtvBu636Nr/'
 
 # Get the current date/time with the timezone.
 
@@ -44,6 +45,7 @@ def capture():
     eventID = get_a_uuid()
     imgName = config['PlantName'] + eventID
     captureImage(imgName)
+    imgPath = S3_BASEURL + imgName + '.jpg'
     createdAt = str(datetime.now(tzlocal()))
     eventData = [{
         'appID': appID,
@@ -52,7 +54,7 @@ def capture():
         'eventID': eventID,
         'temp': temp,
         'hum': hum,
-        'img-path': imgName,
+        'imgPath': imgPath,
         'createdAt': createdAt,
         }]
     bulkStore(eventData)
